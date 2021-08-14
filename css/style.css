@@ -1,49 +1,38 @@
 /* GENERAL */
-html {
+html,
+body {
+    font-family: "Comfortaa", cursive;
     font-size: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Comfortaa", cursive;
-    background-color: #ffd98e;
-}
-
-* {
-    margin: 0;
-    padding: 0;
+    background-color: #ffb677;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
-/* REUSABLE CLASSES */
-/* .btn {
-    background-color: #86a337;
+/* REUSEABLE CLASSES */
+
+.page-header {
     color: white;
-    padding: 0.8em 1.5em;
-    border-radius: 46px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 2em 0;
 }
 
-.light-green {
-    color: #86a337;
+.yellow-bg {
+    background-color: #ffd98e;
 }
 
-.dark-green {
-    color: #616f39;
+.dark-yellow-bg {
+    background-color: #ffb677;
 }
-
-.light-green-bg {
-    background-color: #86a337;
-}
-
-.dark-green-bg {
-    background-color: #616f39;
-} */
 
 /* HOMEPAGE */
 #home {
@@ -56,15 +45,15 @@ nav {
     background-color: #86a337;
     position: fixed;
     z-index: 1000;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    padding: 0.25em 1em;
 }
 
 .nav-logo {
     justify-self: start;
     align-self: center;
-    margin-left: 0.5em;
 }
 
 .nav-logo i {
@@ -82,7 +71,6 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 2rem;
-    padding: 0.5em;
 }
 /* HERO SECTION OF HOMEPAGE*/
 .hero-img {
@@ -105,31 +93,23 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: auto;
+    margin: 0 auto;
     color: #ffb677;
 }
 
 .hero-text h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .hero-text p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 /* ABOUT ME PAGE SECTION */
-.about-header {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.25rem;
-    padding: 2em 0;
-}
 
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #ffb677;
 }
 
 .about-text {
@@ -140,20 +120,11 @@ nav {
 }
 
 /* ABOUT ME PAGE SECTION */
-.products-header {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2em 0;
-    font-size: 1.25rem;
-}
-
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 0.25fr 1.25fr 0.25fr;
+    grid-template-rows: 1.5fr 0.25fr 1.25fr 0.25fr;
     grid-row-gap: 0.5em;
-    background-color: #ffb677;
     padding-bottom: 1em;
 }
 
@@ -181,13 +152,126 @@ nav {
 }
 
 .product-btn {
-    margin: 0 auto;
+    margin: 0.5em auto;
     text-align: center;
     text-decoration: none;
     background-color: #86a337;
     color: white;
-    padding: 0.8em 1.5em;
+    padding: 0.9em 1.25em;
     font-size: 1.05rem;
-    border-radius: 46px;
+    font-weight: 700;
+    border-radius: 40px;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
+}
+
+/* CONTACT ME PAGE SECTION */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+}
+
+form {
+    display: grid;
+    grid-template-rows: 0.15fr 0.15fr 0.5fr 0.15fr;
+}
+
+.name-input:focus,
+.email-input:focus,
+.message-input:focus {
+    outline: none !important;
+}
+
+.name-input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.email-input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+.message-input {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    resize: none;
+}
+
+.form-btn {
+    border: none;
+    margin: 0.4em auto 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #86a337;
+    color: white;
+    padding: 1em 3em;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
+}
+
+.phone-contact {
+    text-align: center;
+}
+
+.phone-contact ul {
+    list-style: none;
+}
+.phone-contact ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.phone-contact ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.social-contact {
+    text-align: center;
+}
+
+.social-contact ul {
+    list-style: none;
+}
+.social-contact ul li {
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.social-contact ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.phone-contact h4,
+.social-contact h4 {
+    padding: 1em;
+    color: black;
+}
+
+footer {
+    background-color: #ffd98e;
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.email-footer {
+    text-decoration: none;
+    color: white;
 }
