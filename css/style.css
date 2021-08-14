@@ -7,9 +7,12 @@ html {
 
 body {
     font-family: "Comfortaa", cursive;
-    margin: 0px;
-    padding: 0px;
     background-color: #ffd98e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -56,7 +59,6 @@ nav {
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0.5em;
 }
 
 .nav-logo {
@@ -80,7 +82,7 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 2rem;
-    margin-right: 0.5em;
+    padding: 0.5em;
 }
 /* HERO SECTION OF HOMEPAGE*/
 .hero-img {
@@ -108,76 +110,74 @@ nav {
 }
 
 .hero-text h1 {
-    font-size: 2.15rem;
+    font-size: 1.5rem;
 }
 
 .hero-text p {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
 }
 
 /* ABOUT ME PAGE SECTION */
-#about {
-    min-width: 100vw;
-    /* box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.493); */
-}
-
 .about-header {
     color: white;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5rem;
-    padding: 3em 0;
+    font-size: 1.25rem;
+    padding: 2em 0;
 }
 
 .about-container {
     display: grid;
     grid-template-columns: 1fr;
     background-color: #ffb677;
-    padding: 0 1em;
 }
 
 .about-text {
-    text-align: center;
-    line-height: 2.25;
-    font-size: 1.15rem;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.05rem;
+    padding: 2em 1.25em;
 }
 
 /* ABOUT ME PAGE SECTION */
-#products {
-    min-width: 100vw;
-    /* box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.493); */
-}
-
 .products-header {
     color: white;
     margin: 0 auto;
     text-align: center;
-    padding: 3em 0;
-    font-size: 1.5rem;
+    padding: 2em 0;
+    font-size: 1.25rem;
 }
 
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.25fr 1.25fr 0.25fr;
+    grid-row-gap: 0.5em;
     background-color: #ffb677;
+    padding-bottom: 1em;
 }
 
 .product-img {
     width: 100%;
-    height: 280px;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1608503021075-7f422167beee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .product-title {
     margin: 0 auto;
     text-align: center;
-    padding-top: 0.75em;
+    padding: 1em 0;
+    font-size: 1.05rem;
 }
 
 .product-text {
     text-align: justify;
-    line-height: 1.75;
-    font-size: 1.15rem;
-    padding: 0 1em;
+    line-height: 2;
+    font-size: 1.05rem;
+    padding: 0 1.25em;
 }
 
 .product-btn {
@@ -187,11 +187,7 @@ nav {
     background-color: #86a337;
     color: white;
     padding: 0.8em 1.5em;
-    margin-bottom: 1.5em;
+    font-size: 1.05rem;
     border-radius: 46px;
-    /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493); */
-}
-
-.product-btn:hover {
-    background: #616f39;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
 }
