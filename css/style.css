@@ -52,8 +52,6 @@ nav {
     width: 100vw;
     background-color: #86a337;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,6 +96,7 @@ nav {
 }
 
 .nav-dropdown ul li a {
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
