@@ -6,7 +6,7 @@ let count = 0;
 navButton.click(function () {
     count++;
     if (count % 2 != 0) {
-        navDropDown.css("display", "block");
+        navDropDown.css("display", "grid");
         navIcon.removeClass("fas fa-bars");
         navIcon.addClass("far fa-window-close");
     } else if (count % 2 == 0) {
