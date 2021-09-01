@@ -29,7 +29,7 @@ body {
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
-    padding: 2em 0;
+    padding: 3em 0;
     position: relative;
     top: 0;
 }
@@ -54,7 +54,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 1em 1em;
+    padding: .5em 1em;
 }
 
 .nav-top-container {
