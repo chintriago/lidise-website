@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
     background-color: #ffb677;
     overscroll-behavior: contain;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 * {
