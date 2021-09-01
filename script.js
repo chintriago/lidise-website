@@ -1,6 +1,6 @@
 const navButton = $("#nav-btn");
 const navIcon = $("#nav-icon");
-const navDropDown = $(".nav-dropdown");
+const navDropDown = $(".nav-bottom-container");
 let count = 0;
 
 navButton.click(function () {
@@ -14,4 +14,5 @@ navButton.click(function () {
         navIcon.removeClass("far fa-window-close");
         navIcon.addClass("fas fa-bars");
     };
+    console.log(count);
 });
