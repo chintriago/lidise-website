@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
     background-color: #ffb677;
     overscroll-behavior: contain;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
     color: white;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 3.5em 0;
     position: relative;
     top: 0;
@@ -53,8 +53,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
-    padding: 0.25em 1em;
-    overflow: hidden;
+    padding: 1em 1em;
 }
 
 .nav-top-container {
@@ -64,8 +63,8 @@ nav {
 }
 
 .nav-logo i {
-    font-size: 2rem;
-    color: #ffb677;
+    font-size: 2.25rem;
+    color: #ffd98e;
 }
 
 .nav-dir {
@@ -75,7 +74,7 @@ nav {
 .nav-dir a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 .nav-bottom-container {
@@ -89,13 +88,13 @@ nav {
 }
 
 .nav-bottom-container ul li {
-    margin: 1em 0;
+    margin: 2em 0;
 }
 
 .nav-bottom-container ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.45rem;
+    font-size: 2rem;
 }
 
 /* HERO SECTION OF HOMEPAGE*/
@@ -123,11 +122,11 @@ nav {
 }
 
 .hero-text h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
 .hero-text p {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
 }
 
 /* ABOUT ME PAGE SECTION */
