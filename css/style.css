@@ -56,6 +56,10 @@ nav {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
 }
 
+.nav-tablet {
+    display: none;
+}
+
 .nav-top-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -133,7 +137,7 @@ nav {
     font-weight: 800;
 }
 
-/* ABOUT ME PAGE SECTION */
+/* ABOUT ME */
 
 .about-container {
     width: 95vw;
@@ -150,7 +154,7 @@ nav {
     padding: 2em 1em;
 }
 
-/* ABOUT ME PAGE SECTION */
+/* PRODUCTS */
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -205,7 +209,7 @@ nav {
     letter-spacing: 1px;
 }
 
-/* CONTACT ME PAGE SECTION */
+/* CONTACT ME */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -261,7 +265,7 @@ form {
     text-decoration: none;
     background-color: #86a337;
     color: white;
-    padding: 0.8em 3em;
+    padding: 0.8em 2.5em;
     font-size: 1.05rem;
     font-weight: 700;
     border-radius: 48px;
@@ -327,4 +331,46 @@ footer {
 .email-footer {
     text-decoration: none;
     color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    /* NAVBAR*/
+    .nav-dir {
+        display: none;
+    }
+
+    .nav-tablet {
+        display: inline-block;
+        position: absolute;
+        right: 1%;
+        top: 25%;
+    }
+
+    .nav-tablet ul li {
+        display: inline;
+    }
+
+    .nav-tablet ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.15rem;
+        font-weight: 800;
+        padding: 0 0.25em;
+    }
+
+    /* ABOUT ME */
+    .about-container {
+        width: 80vw;
+    }
+
+    /* PRODUCTS */
+    .product-container {
+        width: 80vw;
+    }
+
+    /* CONTACT ME */
+    .contact-container {
+        width: 80vw;
+    }
 }
