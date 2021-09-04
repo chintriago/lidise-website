@@ -340,7 +340,7 @@ footer {
 }
 
 /* MEDIA QUERY FOR TABLETS */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     /* NAVBAR*/
     .nav-dir {
         display: none;
