@@ -409,16 +409,16 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 50vw;
+        width: 40vw;
     }
 
     /* PRODUCTS */
     .product-container {
-        width: 50vw;
+        width: 40vw;
     }
 
     /* CONTACT ME */
     .contact-container {
-        width: 50vw;
+        width: 40vw;
     }
 }
