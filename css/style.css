@@ -148,8 +148,8 @@ nav {
 
 .about-text {
     text-align: justify;
-    line-height: 2;
-    font-size: 1.1rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
     padding: 2em 1em;
 }
 
@@ -157,7 +157,7 @@ nav {
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 0.25fr 1fr 0.25fr;
+    grid-template-rows: 2fr 0.25fr 0.5fr 0.25fr;
     width: 95vw;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
 }
@@ -189,8 +189,8 @@ nav {
 
 .product-text {
     text-align: justify;
-    line-height: 2;
-    font-size: 1.1rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
     padding: 0 1em;
 }
 
@@ -322,9 +322,9 @@ footer {
     font-size: 0.75rem;
     text-align: center;
     margin: 0 auto;
-    padding: 2em 2em;
+    padding: 1.5em 1.5em;
     background-color: #86a337;
-    margin-top: 8em;
+    margin-top: 10em;
 }
 
 .email-footer {
@@ -333,14 +333,14 @@ footer {
 }
 
 /* MEDIA QUERY FOR MEDIUM MOBILE AND BELOW */
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
     .product-container {
         grid-template-rows: 1fr 0.25fr 0.5fr 0.25fr;
     }
 }
 
 /* MEDIA QUERY FOR TABLETS */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     /* NAVBAR*/
     .nav-dir {
         display: none;
@@ -349,7 +349,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 1%;
+        right: 3%;
         top: 25%;
     }
 
@@ -362,23 +362,23 @@ footer {
         color: white;
         font-size: 1.15rem;
         font-weight: 800;
-        padding: 0 0.25em;
+        padding: 0 0.5em;
     }
 
     /* ABOUT ME */
     .about-container {
-        width: 80vw;
+        width: 75vw;
     }
 
     /* PRODUCTS */
     .product-container {
-        width: 80vw;
-        grid-template-rows: 1.75fr 0.25fr 1fr 0.25fr;
+        width: 75vw;
     }
 
     /* CONTACT ME */
     .contact-container {
-        width: 80vw;
+        width: 75vw;
+        height: 75vh;
     }
 }
 
@@ -391,7 +391,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 2%;
+        right: 3%;
         top: 25%;
     }
 
@@ -409,16 +409,67 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 40vw;
+        width: 50vw;
     }
 
     /* PRODUCTS */
+    .products-container {
+        display: flex;
+    }
+
     .product-container {
         width: 40vw;
+        height: 60vh;
     }
 
     /* CONTACT ME */
     .contact-container {
-        width: 40vw;
+        width: 50vw;
+    }
+}
+
+/* MEDIA QUERY FOR DESKTOP AND UP */
+@media screen and (min-width: 1440px) {
+    .nav-dir {
+        display: none;
+    }
+
+    .nav-tablet {
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: 25%;
+    }
+
+    .nav-tablet ul li {
+        display: inline-block;
+    }
+
+    .nav-tablet ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.15rem;
+        font-weight: 800;
+        padding: 0 0.25em;
+    }
+
+    /* ABOUT ME */
+    .about-container {
+        width: 45vw;
+    }
+
+    /* PRODUCTS */
+    .products-container {
+        display: flex;
+    }
+
+    .product-container {
+        width: 35vw;
+        height: 60vh;
+    }
+
+    /* CONTACT ME */
+    .contact-container {
+        width: 45vw;
     }
 }
