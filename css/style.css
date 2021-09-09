@@ -422,7 +422,7 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 50vw;
+        width: 40vw;
     }
 
     /* PRODUCTS */
@@ -437,7 +437,7 @@ footer {
 
     /* CONTACT ME */
     form {
-        width: 50vw;
+        width: 45vw;
     }
 }
 
@@ -472,7 +472,7 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 45vw;
+        width: 35vw;
     }
 
     /* PRODUCTS */
@@ -481,12 +481,12 @@ footer {
     }
 
     .product-container {
-        width: 40vw;
-        height: 50vh;
+        width: 30vw;
+        height: 60vh;
     }
 
     /* CONTACT ME */
     form {
-        width: 45vw;
+        width: 35vw;
     }
 }
