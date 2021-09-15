@@ -177,7 +177,7 @@ nav {
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.493);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.75fr 0.25fr 1fr 0.25fr;
+    grid-template-rows: 1.5fr 0.25fr 1fr 0.25fr;
 }
 
 .card-1 {
@@ -347,12 +347,12 @@ footer {
 /* MEDIA QUERY FOR MEDIUM MOBILE AND BELOW */
 @media screen and (max-width: 375px) {
     .product-container {
-        grid-template-rows: 1.25fr 0.25fr 0.5fr 0.25fr;
+        grid-template-rows: 1.25fr 0.1fr 0.5fr 0.1fr;
     }
 }
 
 /* MEDIA QUERY FOR TABLETS AND UP */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     /* NAVBAR*/
     .nav-dir {
         display: none;
@@ -361,7 +361,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 2%;
+        right: 1%;
         top: 25%;
     }
 
@@ -373,23 +373,28 @@ footer {
         color: white;
         font-size: 1.15rem;
         font-weight: 800;
-        padding: 0 0.5em;
+        padding: 1em;
         text-decoration: none;
+    }
+
+    .nav-tablet a:hover {
+        background-color: #ffb677;
     }
 
     /* ABOUT ME */
     .about-container {
-        width: 75vw;
+        width: 65vw;
     }
 
     /* PRODUCTS */
     .product-container {
-        width: 75vw;
+        width: 65vw;
+        grid-template-rows: 2.5fr 0.25fr 1fr 0.25fr;
     }
 
     /* CONTACT ME */
     form {
-        width: 75vw;
+        width: 65vw;
     }
 }
 
@@ -402,7 +407,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 0;
+        right: 1%;
         top: 25%;
     }
 
@@ -429,12 +434,21 @@ footer {
 
     /* PRODUCTS */
     .products-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .product-container {
         width: 40vw;
-        height: 55vh;
+        grid-template-rows: 1.5fr 0.25fr 1fr 0.25fr;
+    }
+
+    .card-1 {
+        margin: 0 auto;
+    }
+
+    .card-2 {
+        margin: 0 auto;
     }
 
     /* CONTACT ME */
@@ -452,7 +466,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 0;
+        right: 1%;
         top: 25%;
     }
 
@@ -474,21 +488,29 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 35vw;
+        width: 30vw;
     }
 
     /* PRODUCTS */
     .products-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .product-container {
         width: 30vw;
-        height: 60vh;
+        grid-template-rows: 2fr 0.1fr 1fr 0.1fr;
     }
 
+    .card-1 {
+        margin: 0 auto;
+    }
+
+    .card-2 {
+        margin: 0 auto;
+    }
     /* CONTACT ME */
     form {
-        width: 35vw;
+        width: 40vw;
     }
 }
