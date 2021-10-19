@@ -353,7 +353,7 @@ footer {
 }
 
 /* MEDIA QUERY FOR TABLETS AND UP */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     /* NAVBAR*/
     .nav-dir {
         display: none;
@@ -362,7 +362,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 1%;
+        right: 0;
         top: 25%;
     }
 
@@ -384,18 +384,18 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 65vw;
+        width: 580px;
     }
 
     /* PRODUCTS */
     .product-container {
-        width: 65vw;
+        width: 580px;
         grid-template-rows: 2.5fr 0.25fr 1fr 0.25fr;
     }
 
     /* CONTACT ME */
     form {
-        width: 65vw;
+        width: 580px;
     }
 }
 
@@ -408,7 +408,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 1%;
+        right: 0;
         top: 25%;
     }
 
@@ -430,7 +430,7 @@ footer {
 
     /* ABOUT ME */
     .about-container {
-        width: 40vw;
+        width: 700px;
     }
 
     /* PRODUCTS */
@@ -440,7 +440,7 @@ footer {
     }
 
     .product-container {
-        width: 40vw;
+        width: 450px;
         grid-template-rows: 1.5fr 0.25fr 1fr 0.25fr;
     }
 
@@ -454,12 +454,20 @@ footer {
 
     /* CONTACT ME */
     form {
-        width: 45vw;
+        width: 700px;
     }
 }
 
 /* MEDIA QUERY FOR DESKTOP AND UP */
 @media screen and (min-width: 1440px) {
+    /* GENERAL CALSSES */
+    .page-header {
+        font-size: 1.8rem;
+        font-weight: 900;
+        padding: 5em 0;
+    }
+
+    /* NAVBAR */
     .nav-dir {
         display: none;
     }
@@ -467,7 +475,7 @@ footer {
     .nav-tablet {
         display: block;
         position: absolute;
-        right: 1%;
+        right: 0;
         top: 25%;
     }
 
@@ -477,7 +485,7 @@ footer {
 
     .nav-tablet ul li a {
         color: white;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: 800;
         padding: 1em;
         text-decoration: none;
@@ -487,9 +495,22 @@ footer {
         background-color: #ffb677;
     }
 
+    /* HERO */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
     /* ABOUT ME */
     .about-container {
-        width: 30vw;
+        width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* PRODUCTS */
@@ -499,8 +520,8 @@ footer {
     }
 
     .product-container {
-        width: 30vw;
-        height: 80vh;
+        width: 650px;
+        height: 600px;
         grid-template-rows: 2fr 0.1fr 1fr 0.1fr;
     }
 
@@ -513,6 +534,7 @@ footer {
     }
     /* CONTACT ME */
     form {
-        width: 40vw;
+        width: 800px;
+        height: 700px;
     }
 }
